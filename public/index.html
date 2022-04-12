@@ -44,15 +44,17 @@
             width: 50px;
         }
         .header{
-            position: absolute;
+            position: fixed;
             background-color: none;
             width: 100%;
         }
         .nav-bar{
+            position: relative;
             width: 100%;
             display: flex;
             justify-content: space-between;
             padding: 0 12px 0 12px ;
+            z-index: 1;
         }
         .logo{
             height: 100px;
@@ -94,6 +96,24 @@
         }
         #cover{
             margin-bottom: 48px;
+        }
+        .coverFooter{
+            position: absolute;
+            top: 440px;
+            left: 0;
+            right: 0;
+            display: flex;
+            justify-content: center;
+            margin: auto;
+            width: 200px;
+            height: 24px;
+            overflow: hidden;
+        }
+        .coverFooter p{
+            margin-right: 6px;
+        }
+        .coverFooter ul{
+            list-style: none;
         }
         .title{
             color: var(--green);
@@ -151,6 +171,15 @@
                 <figure class="figure">
                     <img src="https://images.pexels.com/photos/1431283/pexels-photo-1431283.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" alt="Cover">
                 </figure>
+                <div class="coverFooter">
+                    <p>Cambia tu</p>
+                    <ul id="listCover">
+                        <li class="list">vida!</li>
+                        <li class="list">salud!</li>
+                        <li class="list">mente!</li>
+                    </ul>
+                </div>
+                <script src="../src/animation.js"></script>
             </article>
             <article class="article">
                 <h2 class="title">ENTRENADOR PERSONALIZADO</h2>

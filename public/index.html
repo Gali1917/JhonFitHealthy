@@ -71,12 +71,21 @@
             background-attachment: fixed;
         }
         .menuLoad{
+            display: none;
             position: absolute;
             top: 68px;
             padding-left: 24px;
         }
         .menuLoad ul{
             list-style: none;
+        }
+        .menuLoad li{
+            margin-top: 8px;
+            background: linear-gradient(90deg, rgba(73,246,12,0.7931547619047619) 0%, rgba(73,246,12,0.4514180672268907) 25%, rgba(0,0,0,0) 87%, rgba(0,0,0,0) 100%);
+        }
+        .menuLoad a{
+            text-decoration: none;
+            color: var(--green);
         }
         .article{
             padding: 24px;
@@ -103,6 +112,13 @@
             width: 150px;
             margin: 0 auto;
         }
+        .footer{
+            height: 40px;
+            display: grid;
+            align-items: end;
+            font-size: var(--sm);
+            
+        }
     </style>
 </head>
 
@@ -113,12 +129,12 @@
         </a>
         <header class="header">
             <nav class="nav-bar">
-                <img src="https://i.postimg.cc/PxJPDLk1/hamburguesa.png"  alt="" class="menu">
+                <img src="https://i.postimg.cc/PxJPDLk1/hamburguesa.png" onclick="menu()" alt="Menu" class="menu">
                 <img src="https://i.postimg.cc/v81vFT61/logopng.png" alt="Logo" class="logo">
             </nav>
         </header>
         <section class="content">
-            <article class="menuLoad">
+            <article id="menu" class="menuLoad">
                 <ul>
                     <li>
                         <a href="/">Proceso</a>
@@ -205,6 +221,9 @@
             </article>
             
         </section>
+        <footer class="footer">
+            <p>Jhon-Fithealthy 2022</p>
+        </footer>
     </div>
 </body>
 </html>

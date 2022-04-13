@@ -1,7 +1,21 @@
-const card = document.getElementById("skills");
+const card1 = document.getElementById("card1");
+const card2 = document.getElementById("card2");
+const card3 = document.getElementById("card3");
+const card4 = document.getElementById("card4");
+const card5 = document.getElementById("card5");
+const card6 = document.getElementById("card6");
+const card7 = document.getElementById("card7");
 
-const uploadCard = () => {
-    console.log('prueba');
+
+
+const uploadCard = (input, scoop) => {
+    input.forEach((input) => {
+        if(input.isIntersecting){
+        console.log('entra');
+
+            input.target.classList.add('visible');
+        }
+    });
 }
 
 const scoop = new IntersectionObserver(uploadCard, {
@@ -11,4 +25,11 @@ const scoop = new IntersectionObserver(uploadCard, {
 });
 
 
-scoop.observe(card);
+scoop.observe(card1);
+scoop.observe(card2);
+scoop.observe(card3);
+scoop.observe(card4);
+scoop.observe(card5);
+scoop.observe(card6);
+scoop.observe(card7);
+

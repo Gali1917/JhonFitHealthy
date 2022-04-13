@@ -1,5 +1,6 @@
 const ul = document.getElementById('listCover');
 
+
 function frame(){
     const animation = ul.animate([
         {transform: "TranslateY(0px)"},
@@ -24,3 +25,4 @@ function disp(){
 setInterval(() => {
     disp();
 }, 1000);
+

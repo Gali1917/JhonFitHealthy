@@ -11,9 +11,11 @@ const card7 = document.getElementById("card7");
 const uploadCard = (input, scoop) => {
     input.forEach((input) => {
         if(input.isIntersecting){
-        console.log('entra');
-
             input.target.classList.add('visible');
+        }
+        else{
+            input.target.classList.remove('visible');
+
         }
     });
 }

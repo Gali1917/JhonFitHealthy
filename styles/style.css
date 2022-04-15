@@ -102,7 +102,6 @@ body{
 #cover{
     position: relative;
     margin-bottom: 48px;
-    margin-top: 48px;
     max-width: 1280px;
 
 }
@@ -138,6 +137,10 @@ body{
 }
 .coverFooter ul{
     list-style: none;
+}
+.videoBox video{
+    display: none;
+    width: 100%;   
 }
 .article{
     padding: 24px;
@@ -183,5 +186,31 @@ body{
     display: grid;
     align-items: end;
     font-size: var(--sm);
-    
+    padding-left: 8px;
+}
+
+@media(min-width: 720px){
+    .content{
+        max-width: 1920px;
+        width: 100vw;
+    }
+    #cover{
+        max-width: 1920px;
+        width: 100vw;
+    }
+    .videoBox video{
+        display: block;
+    }
+    .figure{
+        display: none;
+    }
+    .article{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .skill{
+        width: 80%;
+        margin: 0 auto;
+
+    }
 }

@@ -1,5 +1,5 @@
 const ul = document.getElementById('listCover');
-
+const cover = document.getElementById('imgCover');
 
 function frame(){
     const animation = ul.animate([
@@ -16,13 +16,33 @@ function frame(){
 
 function disp(){
     frame()
-    .then((resolve) =>{
-        console.log(resolve);
+    .then(() =>{
         ul.appendChild(document.getElementsByClassName("list" )[0])
     })
 }
 
 setInterval(() => {
-    disp();
+    disp()
 }, 1000);
 
+function changeCover(){
+    const animation = cover.animate([
+    ],
+    {
+        easing: "Linear",
+        iterations: 1,
+        duration: 200
+    });
+
+    return animation.finished;
+}
+function displayCover(){
+    changeCover()
+    .then(() => {
+        cover.appendChild(document.getElementsByClassName("imgCovers")[0])
+    })
+}
+
+setInterval(() => {
+    displayCover()
+}, 3000);

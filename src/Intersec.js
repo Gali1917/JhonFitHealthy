@@ -13,16 +13,12 @@ const uploadCard = (input, scoop) => {
         if(input.isIntersecting){
             input.target.classList.add('visible');
         }
-        else{
-            input.target.classList.remove('visible');
-
-        }
     });
 }
 
 const scoop = new IntersectionObserver(uploadCard, {
     root: null,
-    rooMargin: '0px',
+    rooMargin: 0,
     threshold: 1.0
 });
 

@@ -27,6 +27,7 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-clip: border-box;
     overflow-x: hidden;
 }
 #container{
@@ -172,6 +173,7 @@ body{
     padding: 24px;
     background-color: rgba(0, 0, 0, 0.466);
     box-shadow: 0px 0px 10px 4px var(--green);
+    margin-bottom: 48px;
 }
 .title{
     color: var(--green);
@@ -221,13 +223,16 @@ body{
 }
 .footer{
     height: 40px;
-    display: grid;
-    align-items: end;
+    display: flex;
     font-size: var(--sm);
     padding-left: 8px;
 }
 
 @media(min-width: 720px){
+    body{
+    background-image: url("https://i.postimg.cc/g0HHyrCQ/pexels-photo-1280.jpg");
+
+    }
     .content{
         max-width: 1920px;
         width: 100vw;
@@ -249,7 +254,6 @@ body{
     .skill{
         width: 80%;
         margin: 0 auto;
-
     }
 }
 @media(max-width: 750px){
@@ -258,6 +262,10 @@ body{
     }
 }
 @media(min-width: 1125px){
+    body{
+        background-image: url("https://i.postimg.cc/W3p65Tj3/pexels-photo-1600.jpg");
+
+    }
     .skill .card{
         box-shadow: 0px 8px 20px 4px var(--green);
     }
@@ -277,6 +285,9 @@ body{
     }
 }
 @media(min-width: 1500px){
+    body{
+        background-image: url("https://i.postimg.cc/gJMy5QkK/pexels-photo-1920.jpg");
+    }
     .skill .card{
         box-shadow: 0px 8px 20px 4px var(--green);
     }

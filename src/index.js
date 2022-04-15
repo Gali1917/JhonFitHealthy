@@ -8,9 +8,10 @@ function menu(){
 }
         
 function animationMenu(){
+    const width = window.innerWidth - 132;
     gsap.to('.menuLoad li', {
         duration: 1.5,
-        x: '-200',
+        x: -width,
         ease: 'bounce',
     });
 

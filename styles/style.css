@@ -68,12 +68,6 @@ body{
     height: 50px;
 
 }
-
-.content{
-    max-width: 1280px;
-    width: 100%;
-    margin: 0 auto;
-}
 .menuLoad{
     display: none;
     position: fixed;
@@ -98,6 +92,11 @@ body{
     color: var(--green);
     text-shadow: 4px 4px 4px black;
 
+}
+.content{
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
 }
 #cover{
     position: relative;
@@ -137,6 +136,10 @@ body{
 }
 .coverFooter ul{
     list-style: none;
+}
+#listCover{
+    color: var(--green);
+
 }
 .videoBox video{
     display: none;

@@ -222,6 +222,8 @@ body{
     margin: 0 auto;
 }
 .footer{
+    margin-top: 54px;
+    border-top: 1px solid var(--green);
     height: 40px;
     display: flex;
     font-size: var(--sm);

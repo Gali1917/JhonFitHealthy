@@ -22,13 +22,17 @@ function buttonCardClose(){
 
 function cardsAnimation(){
     for(x = 1; x <= 5; x++){
-        var text = '.cards' + x
+        var text = '#card' + x;
+        var delay = 0.3;
+        console.log(text);
+        gsap.from(text, {
+            duration: 0.5,
+            x: -1000,
+            delay: delay
+        })
+        delay += 0.3;
+        console.log(delay);
     }
-    gsap.from('.cards', {
-        duration: 0.5,
-        x: -500,
-        delay: 0.3
-    })
 }
 
 

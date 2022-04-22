@@ -48,27 +48,32 @@
                     
                 <div class="cards" id="cardsId">
                     <div class="alignCards">
-                        <div id="card1" class="card">
+                        <div id="card1" class="card" onclick="card1()">
                             <p>ANTROPOMETRICAS</p>
                         </div>
-                        <div id="card2" class="card">
+                        <div id="card2" class="card" onclick="card2()">
                             <p>ADIPOMETRICAS</p>
                         </div>
-                        <div id="card3" class="card">
+                        <div id="card3" class="card" onclick="card3()">
                             <p>ANAMNESIS</p>
                         </div>
-                        <div id="card4" class="card">
+                        <div id="card4" class="card" onclick="card4()">
                             <p>TENSION ARTERIAL</p>
                         </div>
-                        <div id="card5" class="card">
+                        <div id="card5" class="card" onclick="card5()">
                             <p>OBSERVACIONES</p>
                         </div>
                     </div>
                 </div>
-                <script src="../src/process.js"></script>
                 
-                <div class="medidas">
-            </div>
+                <div class="medidas" id="medidasId">
+                    <a href="#" class="closeButton" onclick="closeButton()">
+                        <img id="imgcloseButtonId" src="https://i.postimg.cc/4dRZ0xcY/flecha-hacia-abajo.png" alt="">
+                    </a>
+                    <h3>Antropometricas</h3>
+                    <p>Las medidas antropométricas son la talla, el peso y los perímetros corporales. Estas medidas son imprescindibles para un técnico en dietética.</p>
+                </div>
+                <script src="../src/process.js"></script>
             </article>
         </section>
         <footer class="footer">

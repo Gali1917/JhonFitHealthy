@@ -139,9 +139,21 @@ body{
 .card p{
     font-size: var(--sm);
     text-align: end;
-
 }
-
+.medidas{
+    background-color: #10360362;
+    width: 300px;
+    margin: 240px auto;
+    display: none;
+}
+.medidas h3{
+    margin-bottom: 16px;
+}
+.closeButton img{
+    width: 50px;
+    margin: auto;
+    z-index: 3;
+}
 .footer{
     position: fixed;
     bottom: 0;

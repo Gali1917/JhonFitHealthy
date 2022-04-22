@@ -24,18 +24,30 @@ function cardsAnimation(){
     for(x = 1; x <= 5; x++){
         var text = '#card' + x;
         var delay = 0.3;
-        console.log(text);
         gsap.from(text, {
             duration: 0.5,
             x: -1000,
             delay: delay
         })
         delay += 0.3;
-        console.log(delay);
     }
 }
 
+function card1(){
+    const medidas = document.getElementById('medidasId');
+    const text = document.getElementById('card1');
+    medidas.style.display = 'block';
 
+    gsap.to('.article', {
+        duration: 0.5,
+        y: -1000,
+        delay: 0
+    })
+}
+
+function closeButton(){
+    console.log('prueba');
+}
 function buttonDown(){
     const cards = document.getElementById('cardsId');
     const headerArticle = document.getElementById('headerArticle');

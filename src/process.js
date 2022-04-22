@@ -17,7 +17,6 @@ function buttonCardClose(){
         delay: 0
     });
     buttonPosition = 0;
-
 }
 
 function cardsAnimation(){
@@ -33,10 +32,15 @@ function cardsAnimation(){
     }
 }
 
-function card1(){
+function tipos(title, textP){
     const medidas = document.getElementById('medidasId');
-    const text = document.getElementById('card1');
+    const h = document.getElementById('textH3');
+    const p = document.getElementById('textP');
+
     medidas.style.display = 'block';
+
+    h.textContent = title;
+    p.textContent = textP;
 
     gsap.to('.article', {
         duration: 0.5,
@@ -45,8 +49,27 @@ function card1(){
     })
 }
 
+function card1(){
+    
+    const title = 'Antropometricas';
+    const textP = 'Las medidas antropométricas son la talla, el peso y los perímetros corporales. Estas medidas son imprescindibles para un técnico en dietética.';
+    tipos(title, textP);
+}
+
+function card2(){
+
+    const title = 'Adipometricas';
+    const textP = 'Un dato importante a conocer es si tenemos grasa, cuanta tenemos, si es buena o mala, o si por el contrario tenemos otros factores a tener en cuenta como la retención de liquidos. Para ello usamos el plicómetro o adipómetro, uno de los mejores accesorios para conocer dicho dato.';
+    tipos(title, textP);
+
+}
 function closeButton(){
     console.log('prueba');
+    gsap.to('.article', {
+        duration: 0.5,
+        y: -360,
+        delay: 0
+    });
 }
 function buttonDown(){
     const cards = document.getElementById('cardsId');
